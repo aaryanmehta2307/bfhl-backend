@@ -10,7 +10,7 @@ const EMAIL = "22bcs12209@cuchd.in";
 const ROLL_NUMBER = "22BCS12209";
 
 // POST API Endpoint
-app.post("/bfhl", (req, res) => {
+app.post("/", (req, res) => {
     try {
         const { data } = req.body;
         if (!data || !Array.isArray(data)) {
@@ -43,7 +43,7 @@ app.post("/bfhl", (req, res) => {
 });
 
 // GET API Endpoint
-app.get("/bfhl", (req, res) => {
+app.get("/", (req, res) => {
     res.status(200).json({ operation_code: 1 });
 });
 
